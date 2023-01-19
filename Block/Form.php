@@ -14,7 +14,7 @@ class Form extends \Magento\Framework\View\Element\Template
 
 	public function crud()
 	{
-		return __('<h1>ESTE ES EL CRUD</h1>');
+		return __('ESTE ES EL CRUD');
 	}
 
 	public function getPostCollection(){
