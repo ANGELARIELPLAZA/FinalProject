@@ -14,7 +14,7 @@ class Form extends \Magento\Framework\View\Element\Template
 
 	public function form()
 	{
-		return __('ESTE ES EL Form');
+		return __('<h1>ESTE ES EL FORM</h1>');
 	}
 
 }
