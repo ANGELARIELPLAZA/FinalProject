@@ -12,9 +12,9 @@ class Form extends \Magento\Framework\View\Element\Template
 		parent::__construct($context);
 	}
 
-	public function sayHello()
+	public function crud()
 	{
-		return __('Hello World');
+		return __('<h1>ESTE ES EL CRUD</h1>');
 	}
 
 	public function getPostCollection(){
