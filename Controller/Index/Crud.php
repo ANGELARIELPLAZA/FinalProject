@@ -1,7 +1,7 @@
 <?php
 namespace TresdTech\FinalProject\Controller\Index;
 
-class Form extends \Magento\Framework\App\Action\Action
+class Crud extends \Magento\Framework\App\Action\Action
 {
 	protected $_pageFactory;
 	public function __construct(
