@@ -1,6 +1,6 @@
 <?php
 namespace TresdTech\FinalProject\Block;
-class Form extends \Magento\Framework\View\Element\Template
+class Crud extends \Magento\Framework\View\Element\Template
 {
 	protected $_postFactory;
 	public function __construct(
