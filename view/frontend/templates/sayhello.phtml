@@ -28,8 +28,9 @@ tr:nth-child(even) { background-color: #dddddd; }
     <?php
         foreach ($block->getPostCollection() as $key=>$post){
             echo '<tr>
-                    <td>'.$post->getId().'</td>
-                    <td>'.$post->getFirstName().'</td>
+                    <td>'.$post->getid().'</td>
+                    <td>'.$post->getFirst_name().'</td>
+                    <td>'.$post->getLast_name().'</td>
                     <td>'.$post->getEmail().'</td>
                     <td>'.$post->getTelephone().'</td>
                   </tr>';

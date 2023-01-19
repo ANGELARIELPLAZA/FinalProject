@@ -3,7 +3,7 @@ namespace TresdTech\FinalProject\Model\ResourceModel\Post;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
-	protected $_idFieldName = 'post_id';
+	protected $_idFieldName = 'id';
 	protected $_eventPrefix = 'tresdtech_finalproject_post_collection';
 	protected $_eventObject = 'post_collection';
 
