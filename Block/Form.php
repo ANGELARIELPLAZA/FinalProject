@@ -12,7 +12,7 @@ class Form extends \Magento\Framework\View\Element\Template
 		parent::__construct($context);
 	}
 
-	public function crud()
+	public function form()
 	{
 		return __('ESTE ES EL Form');
 	}
