@@ -3,7 +3,7 @@ namespace TresdTech\FinalProject\Controller\Index;
 
 class Form extends \Magento\Framework\App\Action\Action
 {
-	protected $_pageFactory;
+    protected $_pageFactory;
 
 	public function __construct(
 		\Magento\Framework\App\Action\Context $context,
@@ -15,6 +15,7 @@ class Form extends \Magento\Framework\App\Action\Action
 
 	public function execute()
 	{
-		return $this->_pageFactory->create();
+		echo "Hello World";
+		exit;
 	}
 }
