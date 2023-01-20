@@ -1,40 +1,22 @@
 <?php
 namespace TresdTech\FinalProject\Controller\Form;
-use Magento\Framework\Setup\InstallDataInterface;
-use Magento\Framework\Setup\ModuleContextInterface;
-use Magento\Framework\Setup\ModuleDataSetupInterface;
-class Insertdata implements InstallDataInterface
-{	protected $_postFactory;
-
-    public function __construct(\TresdTech\FinalProject\Model\PostFactory $postFactory)
-	{
-		$this->_postFactory = $postFactory;
-	}
+class Insertdata extends \Magento\Framework\App\Action\Action
+{
+    public function __construct(\Magento\Framework\App\Action\Context $context)
+    {
+        return parent::__construct($context);
+    }
  
     public function execute()
     {
         $post = $this->getRequest()->getPost();
         print_r($post);
         if ($post) {
-            $data = [
-                'first_name'    => "Angel",
-                'last_name' 	=> "Ariel",
-                'email'      	=> 'admin@admin.com',
-                'telephone'     => '9999999999',
-                ];
-            $post = $this->_postFactory->create();
-            $post->addData($data)->save();
+                //Your Code To perform Action On Post Data
+                //To Display Data
+                //To Insert Data In Database
+                echo "Hello World";
+		exit;
         }
     }
-    public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
-	{
-		$data = [
-			'first_name'    => "Angel",
-			'last_name' 	=> "Ariel",
-			'email'      	=> 'admin@admin.com',
-			'telephone'     => '9999999999',
-			];
-		$post = $this->_postFactory->create();
-		$post->addData($data)->save();
-	}
 }
