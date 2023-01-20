@@ -1,13 +1,21 @@
 <?php
-
 namespace TresdTech\FinalProject\Block;
-
 class Form extends \Magento\Framework\View\Element\Template
 {
-    public function __construct(\Magento\Framework\View\Element\Template\Context $context, array $data = [])
-    {
-        parent::__construct($context, $data);
-    }
+    protected $_postFactory;
+	public function __construct(
+		\Magento\Framework\View\Element\Template\Context $context,
+		\TresdTech\FinalProject\Model\PostFactory $postFactory
+	)
+	{
+		$this->_postFactory = $postFactory;
+		parent::__construct($context);
+	}
 
-    
+	public function form()
+	{
+		return __('<h1>ESTE ES EL FORM</h1>');
+	}
+
 }
+
