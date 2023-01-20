@@ -1,9 +1,9 @@
 <?php 
-namespace TresdTech\FinalProject\Controller\Index;
+namespace TresdTech\FinalProject\Controller\Submit;
 use TresdTech\FinalProject\Model\DataExampleFactory;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\App\Action\Context;
-class Index extends \Magento\Framework\App\Action\Action{
+class Submit extends \Magento\Framework\App\Action\Action{
     protected $_dataExample;
     protected $resultRedirect;
     public function __construct(\Magento\Framework\App\Action\Context $context,
