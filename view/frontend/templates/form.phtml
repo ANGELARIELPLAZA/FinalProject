@@ -8,17 +8,3 @@ echo $block->form();
 ?>
 
 
-
-<form name="test-form" id="my-custom-form" action="" method="post">
-    <label for="firstname"><?php echo $this->__('First name') ?> <span class="required">*</span></label><br />
-    <input id="firstname" name="firstname" class="input-text required-entry" />
-    <label for="lastname"><?php echo $this->__('Last name') ?> <span class="required">*</span></label><br />
-    <input id="lastname" name="lastname" class="input-text required-entry" />
-    <label for="useremail"><?php echo $this->__('Email') ?> <span class="required">*</span></label><br />
-    <input type="text" name="useremail" id="useremail" class="input-text required-entry validate-email" />
-</form>
-<script type="text/javascript">
-    //< ![CDATA[
-        var customForm = new VarienForm('my-custom-form');
-    //]]>
-</script>
