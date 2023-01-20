@@ -1,13 +1,13 @@
 <?php 
 namespace TresdTech\FinalProject\Controller\Submit;
-use TresdTech\FinalProject\Model\DataExampleFactory;
+use TresdTech\FinalProject\Model\ExtensionFactory;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\App\Action\Context;
 class Submit extends \Magento\Framework\App\Action\Action{
     protected $_dataExample;
     protected $resultRedirect;
     public function __construct(\Magento\Framework\App\Action\Context $context,
-        \TresdTech\FinalProject\Model\DataExampleFactory  $dataExample,
+        \TresdTech\FinalProject\Model\ExtensionFactory  $dataExample,
     \Magento\Framework\Controller\ResultFactory $result){
         parent::__construct($context);
         $this->_dataExample = $dataExample;
