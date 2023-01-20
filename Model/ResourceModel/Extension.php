@@ -6,6 +6,6 @@ class Extension extends AbstractDb
 {
     protected function _construct()
     {
-        $this->_init('extension', 'id');
+        $this->_init('tresdtech_finalproject_post', 'id');
     }
 }
