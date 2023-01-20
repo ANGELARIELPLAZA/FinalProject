@@ -9,8 +9,5 @@ class Form extends \Magento\Framework\View\Element\Template
         parent::__construct($context, $data);
     }
 
-    public function getFormAction()
-    {
-        return $this->getUrl('finalproject/index/submit', ['_secure' => true]);
-    }
+    
 }
