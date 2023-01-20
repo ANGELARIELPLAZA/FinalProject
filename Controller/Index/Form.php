@@ -1,6 +1,7 @@
 <?php
 namespace TresdTech\FinalProject\Controller\Index;
- use Magento\Framework\View\Result\PageFactory;
+
+class Form extends \Magento\Framework\App\Action\Action
 {
     protected $_pageFactory;
 	public function __construct(
