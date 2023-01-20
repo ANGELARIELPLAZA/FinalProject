@@ -12,10 +12,9 @@ class Form extends \Magento\Framework\View\Element\Template
 		parent::__construct($context);
 	}
 
-	public function form()
+	public function getFormAction()
 	{
 		return __('<h1>ESTE ES EL FORM</h1>');
 	}
 
 }
-
