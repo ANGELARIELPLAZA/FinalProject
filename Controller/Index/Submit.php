@@ -1,5 +1,5 @@
 <?php 
-namespace TresdTech\FinalProject\Controller\Submit;
+namespace TresdTech\FinalProject\Controller\Index;
 use TresdTech\FinalProject\Model\ExtensionFactory;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\App\Action\Context;
