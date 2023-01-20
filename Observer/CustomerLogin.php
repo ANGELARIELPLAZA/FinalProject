@@ -1,6 +1,6 @@
 <?php
 
-namespace TresdTech\FinalProject\Observer\Frontend;
+namespace TresdTech\FinalProject\Observer;
 
 use Magento\Framework\Event\ObserverInterface;
 
