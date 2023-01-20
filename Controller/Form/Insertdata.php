@@ -2,7 +2,7 @@
 namespace TresdTech\FinalProject\Controller\Form;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
-use Meetanshi\Extension\Model\ExtensionFactory;
+use TresdTech\FinalProject\Model\ExtensionFactory;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\App\Action\Action;
 class Insertdata extends \Magento\Framework\App\Action\Action
