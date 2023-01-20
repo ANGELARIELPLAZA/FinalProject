@@ -18,7 +18,6 @@ class Submit extends \Magento\Framework\App\Action\Action
     {
         $this->_resultPageFactory = $resultPageFactory;
 		$this->_extensionFactory = $extensionFactory;
-        $model = $this->_FormModel->create();
         parent::__construct($context);
     }
  
