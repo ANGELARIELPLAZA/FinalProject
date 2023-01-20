@@ -8,27 +8,25 @@ echo $block->form();
 ?>
 
 
-<form method="post">
- <ul>
-  <li>
-    <label for="name">Primer Nombre:</label>
-    <input type="text" id="name" name="user_name">
-  </li>
-  <li>
-    <label for="name">Segundo Nombre:</label>
-    <input type="text" id="name" name="user_name">
-  </li>
-  <li>
-    <label for="mail">Correo electrónico:</label>
-    <input type="email" id="mail" name="user_mail">
-  </li>
-  <li>
-    <label for="msg">telephone:</label>
-    <input type="text" id="name" name="user_name">
-  </li>
- </ul>
- <input type="submit" value="Enviar" />
- </form>
+<form class="form" action="<?= $block->getUrl('finalproject/index/form'); ?>" method="post">
+    <fieldset class="fieldset">
+        <legend class="legend"><span><?php /* @escapeNotVerified */ echo __('Test Form') ?></span></legend><br>
+        <div class="field required">
+            <label for="number" class="label"><span><?php /* @escapeNotVerified */ echo __('Input') ?></span></label>
+            <div class="control">
+                <input type="text" id="number" name="number" class="input-text"/>
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="<?php /* @escapeNotVerified */ echo __('Submit') ?>">
+                <span><?php /* @escapeNotVerified */ echo __('Submit') ?></span>
+            </button>
+        </div>
+    </div>
+</form>
+
  <form action="http://192.168.0.25/finalproject/index/crud">
     <input type="submit" value="Go to crud" />
 </form>

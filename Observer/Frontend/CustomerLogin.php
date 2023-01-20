@@ -10,6 +10,7 @@ class CustomerLogin implements ObserverInterface
     {
         echo "Welcom ";
         $customer = $observer->getEvent()->getCustomer();
+        
         echo $customer->getName(); //Get customer name
         exit;
     }
