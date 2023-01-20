@@ -12,9 +12,21 @@ echo $block->form();
     <fieldset class="fieldset">
         <legend class="legend"><span><?php /* @escapeNotVerified */ echo __('Test Form') ?></span></legend><br>
         <div class="field required">
-            <label for="number" class="label"><span><?php /* @escapeNotVerified */ echo __('Input') ?></span></label>
+            <label for="first_name" class="label"><span><?php /* @escapeNotVerified */ echo __('First Name') ?></span></label>
             <div class="control">
-                <input type="text" id="number" name="number" class="input-text"/>
+                <input type="text" id="first_name" name="first_name" class="input-text"/>
+            </div>
+            <label for="last_name" class="label"><span><?php /* @escapeNotVerified */ echo __('Last Name') ?></span></label>
+            <div class="control">
+                <input type="text" id="last_name" name="last_name" class="input-text"/>
+            </div>
+            <label for="email" class="label"><span><?php /* @escapeNotVerified */ echo __('Email') ?></span></label>
+            <div class="control">
+                <input type="text" id="email" name="email" class="input-text"/>
+            </div>
+            <label for="telephone" class="label"><span><?php /* @escapeNotVerified */ echo __('Telephone') ?></span></label>
+            <div class="control">
+                <input type="text" id="telephone" name="telephone" class="input-text"/>
             </div>
         </div>
     </fieldset>
