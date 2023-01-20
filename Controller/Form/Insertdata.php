@@ -1,6 +1,6 @@
 <?php
-namespace TresdTech\FinalProject\Controller\Index;
-class Products extends \Magento\Framework\App\Action\Action
+namespace TresdTech\FinalProject\Controller\Form;
+class Insertdata extends \Magento\Framework\App\Action\Action
 {
     public function __construct(\Magento\Framework\App\Action\Context $context)
     {
