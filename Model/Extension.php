@@ -1,12 +1,8 @@
-<?php
+<?php 
 namespace TresdTech\FinalProject\Model;
-
-use Magento\Framework\Model\AbstractModel;
-use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
-class Extension extends AbstractModel
-{
-    protected function _construct()
-    {
-        $this->_init('TresdTech\FinalProject\Model\ResourceModel\Extension');
-    }
+class Extension extends \Magento\Framework\Model\AbstractModel{
+	public function _construct(){
+		$this->_init("TresdTech\FinalProject\Model\ResourceModel\Extension");
+	}
 }
+ ?>
