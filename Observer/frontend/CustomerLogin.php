@@ -8,7 +8,7 @@ class CustomerLogin implements ObserverInterface
 {
     public function execute(\Magento\Framework\Event\Observer $observer)
     {
-        echo "Customer LoggedIn";
+        echo "Welcom ";
         $customer = $observer->getEvent()->getCustomer();
         echo $customer->getName(); //Get customer name
         exit;
