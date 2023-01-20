@@ -13,9 +13,8 @@ class Form extends \Magento\Framework\App\Action\Action
 	}
 
 	public function execute()
-	{ 	echo "hello from the controller";
-		exit();
-		 $resultPage = $this->resultPageFactory->create();
+	{ 	
+		$resultPage = $this->resultPageFactory->create();
 		return $resultPage;
 	}
 }
