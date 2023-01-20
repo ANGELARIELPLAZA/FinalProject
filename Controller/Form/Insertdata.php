@@ -12,11 +12,14 @@ class Insertdata extends \Magento\Framework\App\Action\Action
         $post = $this->getRequest()->getPost();
         print_r($post);
         if ($post) {
-                //Your Code To perform Action On Post Data
-                //To Display Data
-                //To Insert Data In Database
-                echo "Hello World";
-		exit;
+            $data = [
+                'first_name'    => "Angel",
+                'last_name' 	=> "Ariel",
+                'email'      	=> 'admin@admin.com',
+                'telephone'     => '9999999999',
+                ];
+            $post = $this->_postFactory->create();
+            $post->addData($data)->save();
         }
     }
 }
