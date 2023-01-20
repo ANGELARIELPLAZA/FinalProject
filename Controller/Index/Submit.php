@@ -21,6 +21,7 @@ class Submit extends Action
     {
         $this->resultPageFactory = $resultPageFactory;
         $this->extensionFactory = $extensionFactory;
+        $model = $this->_FormModel->create();
         parent::__construct($context);
     }
  
