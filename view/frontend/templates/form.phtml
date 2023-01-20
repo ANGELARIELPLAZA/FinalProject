@@ -8,7 +8,7 @@ echo $block->form();
 ?>
 
 
-<form class="form" action="<?= $block->getUrl('finalproject/index/form'); ?>" method="post">
+<form class="form" action="<?= $block->postUrl('finalproject/index/form'); ?>" method="post">
     <fieldset class="fieldset">
         <legend class="legend"><span><?php /* @escapeNotVerified */ echo __('Test Form') ?></span></legend><br>
         <div class="field required">
