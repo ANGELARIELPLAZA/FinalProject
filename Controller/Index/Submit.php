@@ -15,7 +15,7 @@ class Submit extends \Magento\Framework\App\Action\Action{
     }
 	public function execute(){
         $post = $this->getRequest()->getPost();
-        print($post);
+        print_r($post);
         exit;
         $resultRedirect = $this->resultRedirect->create(ResultFactory::TYPE_REDIRECT);
         $resultRedirect->setUrl($this->_redirect->getRefererUrl());
