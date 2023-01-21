@@ -15,10 +15,17 @@ class Submit extends \Magento\Framework\App\Action\Action{
     }
 	public function execute(){
         $post = $this->getRequest()->getPost();
+        print_r($post->getData());
+        exit;
         $resultRedirect = $this->resultRedirect->create(ResultFactory::TYPE_REDIRECT);
         $resultRedirect->setUrl($this->_redirect->getRefererUrl());
 		$model = $this->_dataExample->create();
-		$model->addData($post->getData());
+		$model->addData([
+			'first_name'    => "Angel",
+			'last_name' 	=> "Ariel",
+			'email'      	=> 'admin@admin.com',
+			'telephone'     => '9999999999'
+			]);
         $saveData = $model->save();
         if($saveData){
             $this->messageManager->addSuccess( __('Insert Record Successfully !') );
