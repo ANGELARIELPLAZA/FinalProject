@@ -19,7 +19,7 @@ class Crud extends \Magento\Framework\View\Element\Template
 
 	public function getPostCollection(){
 		$post = $this->_postFactory->create();
-		if($post){
+		if(!$post){
 		echo "Vacio";	
 		}
 		return $post->getCollection();
