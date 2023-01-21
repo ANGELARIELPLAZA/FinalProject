@@ -1,9 +1,5 @@
 <?php
 namespace TresdTech\FinalProject\Block;
-use Magento\Framework\App\Action\Context;
-use TresdTech\FinalProject\Model\ExtensionFactory;
-use Magento\Framework\Controller\ResultFactory;
-
 class Crud extends \Magento\Framework\View\Element\Template
 {
 	protected $_postFactory;
@@ -23,7 +19,6 @@ class Crud extends \Magento\Framework\View\Element\Template
 
 	public function getPostCollection(){
 		$post = $this->_postFactory->create();
-		$this->messageManager->addSuccess( __('Insert Record Successfully !') );
 		return $post->getCollection();
 	}
 }
