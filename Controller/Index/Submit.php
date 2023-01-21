@@ -18,7 +18,7 @@ class Submit extends \Magento\Framework\App\Action\Action{
         $resultRedirect = $this->resultRedirect->create(ResultFactory::TYPE_REDIRECT);
         $resultRedirect->setUrl($this->_redirect->getRefererUrl());
 		$model = $this->_dataExample->create();
-		$model->addData($post);
+		$model->addData($post->getData());
         $saveData = $model->save();
         if($saveData){
             $this->messageManager->addSuccess( __('Insert Record Successfully !') );
