@@ -12,7 +12,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
 
 		$installer->startSetup();
 
-		if(version_compare($context->getVersion(), '1.1.0', '<')) {
+		if(version_compare($context->getVersion(), '1.1.1', '<')) {
 			if (!$installer->tableExists('tresdtech_finalproject_post')) {
 				$table = $installer->getConnection()->newTable(
 					$installer->getTable('tresdtech_finalproject_post')
