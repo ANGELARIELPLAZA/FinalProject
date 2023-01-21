@@ -22,7 +22,6 @@ class Crud extends \Magento\Framework\View\Element\Template
 		if($post){
 		echo "Vacio";	
 		}
-		print_r($post);
 		return $post->getCollection();
 	}
 }
