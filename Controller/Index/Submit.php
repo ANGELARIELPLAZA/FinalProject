@@ -14,23 +14,22 @@ class Submit extends \Magento\Framework\App\Action\Action{
         $this->resultRedirect = $result;
     }
 	public function execute(){
-        $post = $this->getRequest()->getPost();
-        print_r($post->getData());
-        exit;
-        $resultRedirect = $this->resultRedirect->create(ResultFactory::TYPE_REDIRECT);
-        $resultRedirect->setUrl($this->_redirect->getRefererUrl());
-		$model = $this->_dataExample->create();
-		$model->addData([
-			'first_name'    => "Angel",
-			'last_name' 	=> "Ariel",
-			'email'      	=> 'admin@admin.com',
-			'telephone'     => '9999999999'
-			]);
-        $saveData = $model->save();
-        if($saveData){
-            $this->messageManager->addSuccess( __('Insert Record Successfully !') );
+
+
+        try {
+            $data = (array)$this->getRequest()->getPost();
+            if ($data) {
+                $model = $this->_dataExample->create();
+                $model->setData($data)->save();
+                $this->messageManager->addSuccess( __('Insert Record Successfully !') );
+            }
+        } catch (\Exception $e) {
+            $this->messageManager->addError($e, __("We can\'t submit your request, Please try again."));
         }
-		return $resultRedirect;
+        $resultRedirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
+        $resultRedirect->setUrl($this->_redirect->getRefererUrl());
+        return $resultRedirect;
+
 	}
 }
  ?>
