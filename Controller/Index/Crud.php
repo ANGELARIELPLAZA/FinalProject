@@ -9,6 +9,7 @@ class Crud extends \Magento\Framework\App\Action\Action
 		\Magento\Framework\View\Result\PageFactory $pageFactory)
 	{
 		$this->_pageFactory = $pageFactory;
+		Mage::app()->getCacheInstance()->flush();
 		return parent::__construct($context);
 	}
 
