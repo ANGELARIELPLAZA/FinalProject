@@ -18,7 +18,6 @@ tr:nth-child(even) { background-color: #dddddd; }
 
 <table>
   <tr>
-    <th class="post-id">Id</th>
     <th class="post-name">First Name</th>
     <th class="post-name">Last Name</th>
     <th>Email</th>
@@ -28,7 +27,6 @@ tr:nth-child(even) { background-color: #dddddd; }
     <?php
         foreach ($block->getPostCollection() as $key=>$post){
             echo '<tr>
-                    <td>'.$post->getid().'</td>
                     <td>'.$post->getFirst_name().'</td>
                     <td>'.$post->getLast_name().'</td>
                     <td>'.$post->getEmail().'</td>
