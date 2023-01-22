@@ -25,7 +25,7 @@ class Index extends \Magento\Framework\App\Action\Action
 		
 		foreach($collection as $item){
 			echo "<pre>";
-			if ($item->getData()== false){
+			if ($item == 0){
 				echo "no data";
 		}else{
 			print_r($item->getData());
