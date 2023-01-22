@@ -22,10 +22,12 @@ class Index extends \Magento\Framework\App\Action\Action
 	{
 		$post = $this->_postFactory->create();
 		$collection = $post->getCollection();
-		if ($collection->where('id', $item->name)->count() === 0)
+		
 		foreach($collection as $item){
 			echo "<pre>";
+			if ($item->getData()=== 0){
 			print_r($item->getData());
+		}
 			echo "</pre>";
 		}
 		exit();
