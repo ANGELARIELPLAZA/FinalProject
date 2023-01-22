@@ -45,7 +45,7 @@
                             <label class="label" for="title"><span><?= $block->escapeHtmlAttr(__('Telephone')) ?></span></label>
                             <div class="control">
                                 <input name="telephone" id="telephone" title="Telephone" value="" class="input-text"
-                                       type="text" data-validate="{required:true , minlength:10, 'validate-alpha':true}">
+                                       type="text" data-validate="{required:true , minlength:10, number:true, 'validate-alpha':true}">
                             </div>
                         </div>
                     </div>
