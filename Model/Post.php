@@ -21,7 +21,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements \Magento\Fr
 	public function getDefaultValues()
 	{
 		$values = [];
-
+		print($values)
 		return $values;
 	}
 }
