@@ -18,7 +18,6 @@ class Crud extends \Magento\Framework\View\Element\Template
 	}
 
 	public function getPostCollection(){
-		$this->helper('TresdTech\FinalProject\Helper\Data')->flushCache();
 		$post = $this->_postFactory->create();
 		if(!$post){
 		echo "Vacio";	
