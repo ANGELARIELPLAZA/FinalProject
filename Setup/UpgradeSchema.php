@@ -16,7 +16,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
 			if (!$installer->tableExists('tresdtech_finalproject_post')) {
 				$table = $installer->getConnection()->newTable(
 					$installer->getTable('tresdtech_finalproject_post')
-				)
+				) 
 					->addColumn(
 						'post_id',
 						\Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
