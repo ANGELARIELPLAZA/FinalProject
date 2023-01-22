@@ -27,7 +27,7 @@ class Index extends \Magento\Framework\App\Action\Action
 			print_r($item->getData());
 			echo "</pre>";
 		}
-		exit();
+		
 		return $this->_pageFactory->create();
 	}
 }
