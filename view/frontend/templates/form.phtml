@@ -37,14 +37,14 @@
                             <label class="label" for="title"><span><?= $block->
                                 escapeHtmlAttr(__('Email')) ?></span></label>
                             <div class="control">
-                                <input name="email" id="email" title="Email" value="" class="input-text" type="text"
+                                <input name="email" id="email" title="Email" value="" class="input-email" type="text"
                                        data-validate="{required:true, 'validate-email':true}">
                             </div>
                         </div>
                         <div class="field name required">
                             <label class="label" for="title"><span><?= $block->escapeHtmlAttr(__('Telephone')) ?></span></label>
                             <div class="control">
-                                <input name="telephone" id="telephone" title="Telephone" value="" class="input-text"
+                                <input name="telephone" id="telephone" title="Telephone" value="" class="input-telephone"
                                        type="text" data-validate="{required:true , minlength:10, number:true">
                             </div>
                         </div>
@@ -61,5 +61,5 @@
     </div>
 </div>
  <form action="http://192.168.0.25/finalproject/index/crud">
-    <input type="submit" value="Go to crud" />
+    <input type="submit"  class="action submit primary" value="Go to crud" />
 </form>
